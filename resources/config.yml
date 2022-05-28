@@ -1,0 +1,13 @@
+db:
+  host: 192.168.176.200
+  port: 3306
+  username: root
+  password: 123456
+  databaseName: go
+  extraEnv: charset=utf8mb4&parseTime=True&loc=Local
+  gorm:
+    logger:
+      slowThreshold: 0.2s
+      logLevel: Info
+      ignoreRecordNotFoundError: true
+      colorful: true
